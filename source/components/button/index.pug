@@ -1,0 +1,5 @@
+mixin button(params = {})
+    button(
+        class=`button ${params.modifier ? `button--${params.modifier}` : ''} ${params.class}`
+        type=params.type
+    ) #{params.text}

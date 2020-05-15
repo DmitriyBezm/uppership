@@ -1,0 +1,33 @@
+extends ../auth-form/index
+include ../input/index
+include ../button/index
+
+block form
+    div.sign-in-form
+        +input({
+          class: 'sign-in-form__input',
+          name: 'email',
+          placeholder: 'Email',
+          type: 'email'
+        })
+        +input({
+          class: 'sign-in-form__input',
+          name: 'password',
+          placeholder: 'Password',
+          type: 'password'
+        })
+        span(class='sign-in-form__sign-up-link')
+            | Forgot password ?
+            |
+            a(class="sign-in-form__link" href="/sign-up") Click here
+        div.sign-in-form__buttons
+            +button({
+              class: 'sign-in-form__button',
+              text: 'Sign Up',
+            })
+            +button({
+              class: 'sign-in-form__button',
+              text: 'Sign In',
+              modifier: 'secondary',
+              type: 'submit',
+            })

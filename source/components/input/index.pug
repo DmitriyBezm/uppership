@@ -1,0 +1,7 @@
+mixin input(params={})
+    input(
+        class=`input ${params.class || ''}`
+        type=params.type
+        placeholder=params.placeholder
+        name=params.name
+    )

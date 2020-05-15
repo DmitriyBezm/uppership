@@ -1,0 +1,41 @@
+@import "../../styles/variables";
+
+.auth-form {
+  position: relative;
+  padding: 10px;
+  background-color: rgba(@white, 0.33);
+  border-radius: @auth-form-radius + 5px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: @auth-form-bg-color;
+    border-radius: @auth-form-radius;
+    width: 463px;
+    min-height: 621px;
+    color: @white;
+    background-image: url('../../assets/img/swirls-white-wires.png');
+    background-size: 300%;
+    background-position-y: -22.7%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding: 50px 0 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: @inner-width;
+  }
+
+  &__logo {
+    width: 155px;
+    display: block;
+    margin-bottom: 36px;
+  }
+}

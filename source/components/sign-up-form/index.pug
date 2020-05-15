@@ -1,0 +1,69 @@
+extends ../auth-form/index
+include ../input/index
+include ../button/index
+
+block form
+    div.sign-in-form
+        +input({
+          class: 'sign-up-form__input',
+          name: 'first-name',
+          placeholder: 'First Name',
+          type: 'text'
+        })
+        +input({
+          class: 'sign-up-form__input',
+          name: 'last-name',
+          placeholder: 'Last Name',
+          type: 'text'
+        })
+        +input({
+          class: 'sign-up-form__input',
+          name: 'email',
+          placeholder: 'Email Address',
+          type: 'email'
+        })
+        +input({
+          class: 'sign-up-form__input',
+          name: 'company-name',
+          placeholder: 'Company Name',
+          type: 'text'
+        })
+        +input({
+          class: 'sign-up-form__input',
+          name: 'company-address',
+          placeholder: 'Company Address',
+          type: 'text'
+        })
+        div(class='sign-up-form__input sign-up-form__address')
+            +input({
+              class: 'sign-up-form__address-cell sign-up-form__city',
+              name: 'city',
+              placeholder: 'City',
+              type: 'text'
+            })
+            +input({
+              class: 'sign-up-form__address-cell',
+              name: 'state',
+              placeholder: 'State',
+              type: 'text'
+            })
+            +input({
+              class: 'sign-up-form__address-cell',
+              name: 'zip',
+              placeholder: 'Zip',
+              type: 'number'
+            })
+        +input({
+          class: 'sign-up-form__input',
+          name: 'phone',
+          placeholder: 'Phone Number',
+          type: 'number'
+        })
+
+        div.sign-up-form__buttons
+            +button({
+              class: 'sign-up-form__button',
+              text: 'Sign In',
+              modifier: 'secondary',
+              type: 'submit',
+            })

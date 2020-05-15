@@ -1,0 +1,12 @@
+extends ../base
+
+block head
+    link(href="assets/styles.css" rel="stylesheet")
+
+block content
+    div(
+        class='auth'
+        style={'background-image': 'url("assets/img/auth-background.jpg")'}
+    )
+        div(class='auth__form')
+            block form
